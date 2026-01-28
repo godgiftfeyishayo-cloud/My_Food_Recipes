@@ -18,10 +18,10 @@ export default function Recipes() {
   }, []);
   return (
     <div className="p-4">
-      <h2 className="text-xl font-bold mb-2">Our Recipes</h2>
-      <div>
+      <h2 className="text-xl font-bold mb-7">Our Recipes</h2>
+      <div className="grid grid-cols-1 gap-10">
         {recipes.map((r) => (
-          <Food_Card recipe={r} />
+          <Food_Card recipe={r} key={r.id} />
         ))}
       </div>
     </div>
