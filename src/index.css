@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap");
+
+.logo {
+  font-family: "Rubik Storm", cursive;
+}
