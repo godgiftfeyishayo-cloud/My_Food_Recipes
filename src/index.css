@@ -1,6 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Storm&display=swap");
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap");
-
 .logo {
-  font-family: "Rubik Storm", cursive;
+  font-family: "Lobster Two", cursive;
 }

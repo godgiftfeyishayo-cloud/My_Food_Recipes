@@ -1,11 +1,14 @@
 import React from "react";
+import Header from "./component/Header";
+import Recipes from "./component/Recipes";
+import Food_Card from "./component/Food_Card";
 
 export default function App() {
   return (
     <div>
-      <h1 className="logo text-3xl font-bold text-red-500">
-        Welcome to Food Recipe
-      </h1>
+      <Header />
+      <Recipes />
+      <Food_Card />
     </div>
   );
 }
