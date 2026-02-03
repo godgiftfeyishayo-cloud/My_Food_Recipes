@@ -1,8 +1,8 @@
 export default function Food_Card({ recipe }) {
   return (
-    <div className="rounded-xl shadow-lg overflow-hidden">
+    <div className="rounded-xl shadow-lg overflow-hidden p-4">
       {/* Food Image Container */}
-      <div className="h-60 w-full">
+      <div className="h-60 w-full rounded-xl overflow-hidden">
         <img
           src={recipe.image}
           alt="Delicious Food"
@@ -11,21 +11,21 @@ export default function Food_Card({ recipe }) {
       </div>
 
       {/* Food Description */}
-      <div className="p-4 space-y-2 px-7">
+      <div className="p-4 space-y-2 px-3">
         <h3 className="text-xl font-semibold mb-2">{recipe.name}</h3>
         <p className="mb-4">{recipe.instructions[0]}...</p>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <p className="w-fit">
             <span className="py-[0.5px] mr-2 px-2 bg-amber-200 rounded">
               {recipe.rating}
             </span>
-            ⭐ Rating
+            ⭐
           </p>
           <ul className="flex gap-3">
-            <li className="py-[0.5px] px-2 bg-amber-500 text-white rounded">
+            <li className="py-[0.5px] px-2 bg-amber-500 text-[12px] text-white rounded">
               {recipe.tags[0]}
             </li>
-            <li className="py-[0.5px] px-2 bg-amber-500 text-white rounded">
+            <li className="py-[0.5px] px-2 bg-amber-500 text-[12px] text-white rounded">
               {recipe.tags[1]}
             </li>
           </ul>

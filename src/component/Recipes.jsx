@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Food_Card from "./Food_Card";
-
 export default function Recipes() {
   const [recipes, setRecipes] = useState([]);
   useEffect(() => {
@@ -19,7 +18,7 @@ export default function Recipes() {
   return (
     <div className="p-4">
       <h2 className="text-xl font-bold mb-7">Our Recipes</h2>
-      <div className="grid grid-cols-1 gap-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
         {recipes.map((r) => (
           <Food_Card recipe={r} key={r.id} />
         ))}
