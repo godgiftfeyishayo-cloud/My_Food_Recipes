@@ -1,6 +1,7 @@
 import { TextAlignJustify } from "lucide-react";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
+import { Link } from "react-router";
 
 export default function Header() {
   const [openNav, setOpenNav] = useState(false);
@@ -20,16 +21,16 @@ export default function Header() {
             className="hover:text-amber-900 cursor-pointer duration-300"
             href="#"
           >
-            Home
+            <Link to="/">Home</Link>
           </li>
           <li className="hover:text-amber-900 cursor-pointer duration-300">
-            Support
+            <Link to="/support">Support</Link>
           </li>
           <li className="hover:text-amber-900 cursor-pointer duration-300">
-            Recipes
+            <Link to="/recipes">Recipes</Link>
           </li>
           <li className="hover:text-amber-900 cursor-pointer duration-300">
-            Category
+            <Link to="/category">Category</Link>
           </li>
         </ul>
 
