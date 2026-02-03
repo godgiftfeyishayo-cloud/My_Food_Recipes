@@ -4,8 +4,8 @@ import React from "react";
 
 export default function SearchBar() {
   return (
-    <div className="px-4 py-6">
-      <div className="border border-zinc-400 flex overflow-hidden rounded">
+    <div className="px-4 py-6 w-full flex justify-center">
+      <div className="border border-zinc-400 w-full overflow-hidden rounded max-w-125 flex ">
         {/* Input */}
         <input
           type="text"
