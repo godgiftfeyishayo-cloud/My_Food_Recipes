@@ -16,12 +16,23 @@ export default function Header() {
       {/* DESKTOP NAVBAR */}
       <nav className="hidden md:block gap-6 text-white font-medium">
         <ul className="flex gap-4">
-          <li className="hover:text-amber-900 duration-300" href="#">Home</li>
-          <li className="hover:text-amber-900 duration-300">Support</li>
-          <li className="hover:text-amber-900 duration-300">Recipes</li>
-          <li className="hover:text-amber-900 duration-300">Category</li>
+          <li
+            className="hover:text-amber-900 cursor-pointer duration-300"
+            href="#"
+          >
+            Home
+          </li>
+          <li className="hover:text-amber-900 cursor-pointer duration-300">
+            Support
+          </li>
+          <li className="hover:text-amber-900 cursor-pointer duration-300">
+            Recipes
+          </li>
+          <li className="hover:text-amber-900 cursor-pointer duration-300">
+            Category
+          </li>
         </ul>
-        
+
         {/* <p href="#" className="hover:text-amber-900 duration-300">
           Home
         </p>
