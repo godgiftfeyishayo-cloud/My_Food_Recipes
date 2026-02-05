@@ -14,7 +14,7 @@ export default function Food() {
         const recipes = await fetch(`https://dummyjson.com/recipes/${path.id}`);
         const data = await recipes.json();
        food(data);
-        console.log(data);
+        // console.log(data);
       } catch (error) {
         console.error("Error fetching recipes:", error);
       }
