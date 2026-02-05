@@ -9,6 +9,7 @@ export default function Recipes() {
         const recipes = await fetch("https://dummyjson.com/recipes");
         const data = await recipes.json();
         setRecipes(data.recipes);
+        // console.log(data)
       } catch (error) {
         console.error("Error fetching recipes:", error);
       }
