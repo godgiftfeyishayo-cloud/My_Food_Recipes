@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { Link } from "react-router";
+
 export default function Food_Card({ recipe }) {
   return (
     <div className="rounded-xl shadow-lg overflow-hidden p-4">
@@ -30,9 +33,9 @@ export default function Food_Card({ recipe }) {
             </li>
           </ul>
         </div>
-        <button className="px-4 my-3 rounded bg-amber-400 py-1.5 text-white">
+        <Link to={`/${recipe.id}`} className="px-4 my-3 rounded bg-amber-400 py-1.5 text-white">
           View Recipe
-        </button>
+        </Link>
       </div>
     </div>
   );

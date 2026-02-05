@@ -24,13 +24,13 @@ export default function Header() {
             <Link to="/">Home</Link>
           </li>
           <li className="hover:text-amber-900 cursor-pointer duration-300">
-            <Link to="/support">Support</Link>
+            <Link to="#">Support</Link>
           </li>
           <li className="hover:text-amber-900 cursor-pointer duration-300">
-            <Link to="/recipes">Recipes</Link>
+            <Link to="#">Recipes</Link>
           </li>
           <li className="hover:text-amber-900 cursor-pointer duration-300">
-            <Link to="/category">Category</Link>
+            <Link to="#">Category</Link>
           </li>
         </ul>
 

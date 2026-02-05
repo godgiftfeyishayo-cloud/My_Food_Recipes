@@ -23,10 +23,10 @@ export default function App() {
             </div>
           }
         />
-        <Route element={<Product />} path="/recipes" />
-        <Route element={<Category />} path="/category" />
-        <Route element={<Food />} path="/recipe/:id" />
-        <Route element={<Support />} path="/support" />
+        <Route element={<Food />} path="/:id" />
+        {/* <Route element={<Category />} path="/category" /> */}
+        {/* <Route element={<Food />} path="/recipe/:id" /> */}
+        {/* <Route element={<Support />} path="/support" /> */}
         <Route element={<PageNotFound />} path="*" />
       </Routes>
 
